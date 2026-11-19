@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="650.0" spacing="15.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.cesur.dam.controller.PrimaryController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Listado de Productos">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tablaDatos" prefHeight="350.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="colNombre" prefWidth="280.0" text="Nombre" />
+                <TableColumn fx:id="colPrecio" prefWidth="160.0" text="Precio" />
+                <TableColumn fx:id="colStock" prefWidth="160.0" text="Stock" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</VBox>
